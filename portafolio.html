@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio Profesional de Desarrollador Web e Informático">
+    <title>G0T1L1ES WEB</title>
+
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Archivo de Estilos CSS -->
+    <link rel="stylesheet" href="portafolio.css">
+</head>
+
+<body>
+
+    <!-- Header / Navegación -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="logo">
+                <span class="logo-bracket">&lt;</span>[MA]<span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active-link">Inicio</a></li>
+                    <li><a href="#about" class="nav-link">Sobre mí</a></li>
+                    <li><a href="#skills" class="nav-link">Conocimientos</a></li>
+                    <li><a href="#experience" class="nav-link">Experiencia</a></li>
+                    <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                </ul>
+                <button class="nav-close" id="nav-close" aria-label="Cerrar menú"><i
+                        class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- 1. Inicio / Hero -->
+        <section class="home section" id="home">
+            <div class="home-container container grid">
+                <div class="home-content">
+                    <span class="home-greeting">¡Hola! Mi nombre es</span>
+                    <h1 class="home-title">Matías Bustamante</h1>
+                    <h2 class="home-subtitle">Soy <span class="typing-text" id="typing-text"></span></h2>
+                    <p class="home-description">
+                        Desarrollador enfocado en la creación de interfaces web interactivas y responsivas, con sólidas
+                        bases en programación, optimización de algoritmos y gestión de bases de datos.
+                    </p>
+                    <div class="home-buttons">
+                        <a href="#projects" class="btn btn-primary">Ver Proyectos <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-secondary">Contactar <i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="home-img-wrapper">
+                    <div class="home-img-bg"></div>
+                    <img src="matifoto.png"
+                        alt="Foto de perfil de matías" class="home-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Sobre Mí -->
+        <section class="about section" id="about">
+            <h2 class="section-title">Sobre Mí</h2>
+            <span class="section-subtitle">Mi historia y visión profesional</span>
+
+            <div class="about-container container grid">
+                <div class="about-data">
+                    <p class="about-text">
+                        Tengo conocimientos en desarrollo de software, especialmente en <strong>HTML, CSS y
+                            JavaScript</strong> para crear interfaces web interactivas y responsivas.
+                    </p>
+                    <p class="about-text">
+                        Cuento con formación en lenguajes de programación como <strong>C++ y Python</strong> para
+                        operaciones y tareas básicas bajo algoritmos, y <strong>Java</strong> orientado al desarrollo de
+                        videojuegos. Además, poseo un nivel intermedio en bases de datos relacionales como
+                        <strong>MySQL, SQL Server y Oracle</strong>, donde manejo la normalización, optimización de
+                        consultas y diseño de modelos, junto con capacidades para la instalación y mantención de
+                        hardware y software.
+                    </p>
+
+                    <div class="about-info grid">
+                        <div class="about-box">
+                            <i class="fa-solid fa-code about-icon"></i>
+                            <h3 class="about-box-title">Desarrollo Web</h3>
+                            <span class="about-box-subtitle">HTML, CSS & JS</span>
+                        </div>
+                        <div class="about-box">
+                            <i class="fa-solid fa-database about-icon"></i>
+                            <h3 class="about-box-title">Bases de Datos</h3>
+                            <span class="about-box-subtitle">MySQL, SQL Server, Oracle</span>
+                        </div>
+                        <div class="about-box">
+                            <i class="fa-solid fa-screwdriver-wrench about-icon"></i>
+                            <h3 class="about-box-title">Soporte & Hardware</h3>
+                            <span class="about-box-subtitle">Instalación y Mantención</span>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn btn-primary btn-cv" download>
+                        Descargar CV <i class="fa-solid fa-download"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Conocimientos -->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Conocimientos</h2>
+            <span class="section-subtitle">Habilidades técnicas y herramientas</span>
+
+            <div class="skills-container container grid">
+                <!-- Frontend -->
+                <div class="skills-card">
+                    <div class="skills-header">
+                        <i class="fa-solid fa-laptop-code skills-icon"></i>
+                        <h3 class="skills-card-title">Desarrollo Web (Frontend)</h3>
+                    </div>
+                    <p class="skills-card-desc">Creación de interfaces web dinámicas, adaptables a dispositivos móviles
+                        e interactivas.</p>
+                    <div class="skills-tags">
+                        <span class="tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+                        <span class="tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                        <span class="tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="tag"><i class="fa-solid fa-mobile-screen"></i> Diseño Responsivo</span>
+                    </div>
+                </div>
+
+                <!-- Lenguajes de Programación -->
+                <div class="skills-card">
+                    <div class="skills-header">
+                        <i class="fa-solid fa-code skills-icon"></i>
+                        <h3 class="skills-card-title">Lenguajes de Programación</h3>
+                    </div>
+                    <p class="skills-card-desc">Lógica algorítmica, resolución de problemas y desarrollo orientado a
+                        objetos/videojuegos.</p>
+                    <div class="skills-tags">
+                        <span class="tag"><i class="fa-solid fa-microchip"></i> C++ (Algoritmos)</span>
+                        <span class="tag"><i class="fa-brands fa-python"></i> Python (Operaciones básicas)</span>
+                        <span class="tag"><i class="fa-brands fa-java"></i> Java (Videojuegos)</span>
+                    </div>
+                </div>
+
+                <!-- Bases de Datos -->
+                <div class="skills-card">
+                    <div class="skills-header">
+                        <i class="fa-solid fa-database skills-icon"></i>
+                        <h3 class="skills-card-title">Bases de Datos Relacionales</h3>
+                    </div>
+                    <p class="skills-card-desc">Nivel intermedio en normalización, optimización de consultas y diseño de
+                        modelos.</p>
+                    <div class="skills-tags">
+                        <span class="tag"><i class="fa-solid fa-server"></i> MySQL</span>
+                        <span class="tag"><i class="fa-solid fa-database"></i> SQL Server</span>
+                        <span class="tag"><i class="fa-solid fa-layer-group"></i> Oracle</span>
+                    </div>
+                </div>
+
+                <!-- Herramientas y Hardware -->
+                <div class="skills-card">
+                    <div class="skills-header">
+                        <i class="fa-solid fa-wrench skills-icon"></i>
+                        <h3 class="skills-card-title">Herramientas & Sistemas</h3>
+                    </div>
+                    <p class="skills-card-desc">Gestión de código, entorno de desarrollo y soporte informático.</p>
+                    <div class="skills-tags">
+                        <span class="tag"><i class="fa-brands fa-github"></i> GitHub</span>
+                        <span class="tag"><i class="fa-solid fa-globe"></i> Hosting & cPanel</span>
+                        <span class="tag"><i class="fa-solid fa-code"></i> Visual Studio IDE</span>
+                        <span class="tag"><i class="fa-solid fa-gears"></i> Mantención Hardware / Software</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Formación y Experiencia -->
+        <section class="experience section" id="experience">
+            <h2 class="section-title">Formación y Experiencia</h2>
+            <span class="section-subtitle">Mi trayectoria académica y laboral</span>
+
+            <div class="experience-container container grid">
+                <!-- Timeline Formación -->
+                <div class="timeline-box">
+                    <h3 class="timeline-title"><i class="fa-solid fa-graduation-cap"></i> Educación</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date">2021 - 2024</span>
+                            <h4 class="timeline-role">Técnico de nivel medio en Programación</h4>
+                            <span class="timeline-place">Liceo Comercial Vate Vicente Huidobro</span>
+                            <p class="timeline-desc">Estudios enfocados en lógica de programación, arquitectura de
+                                computadores, desarrollo web y bases de datos.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date">2025 - Presente</span>
+                            <h4 class="timeline-role">Ingeniería en Informática</h4>
+                            <span class="timeline-place">Universidad Bernardo O'Higgins</span>
+                            <p class="timeline-desc">Formación profesional en desarrollo de software, gestión de
+                                proyectos tecnológicos, desarrollo de Inteligencia Artificial y entre varios temas más.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Timeline Experiencia -->
+                <div class="timeline-box">
+                    <h3 class="timeline-title"><i class="fa-solid fa-briefcase"></i> Experiencia Laboral</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date">Febrero 2025 - Abril 2025</span>
+                            <h4 class="timeline-role">Desarrollador Web</h4>
+                            <span class="timeline-place">Empresa Lexa.cl</span>
+                            <p class="timeline-desc">3 meses de práctica profesional, donde levante la página web caída
+                                de "Lexa.cl", realice mantenimiento perfeccionando apartado visual y funcional usando y
+                                aprendiendo con Wordpress.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <span class="timeline-date">Marzo 2026</span>
+                            <h4 class="timeline-role">Desarrollador Web</h4>
+                            <span class="timeline-place">Empresa Ingeniería Eléctrica JMC</span>
+                            <p class="timeline-desc">Ingeniería Eléctrica JMC confió en mí para el desarrollo de una
+                                landing page estática, siendo una página responsiva para una vista multidispositivo
+                                adecuada y cómoda. Actualmente la página está en línea con su propio dominio y host.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Proyectos -->
+        <section class="projects section" id="projects">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <span class="section-subtitle">Páginas web desarrolladas</span>
+
+            <div class="projects-container container grid">
+                <!-- Proyecto 1 -->
+                <article class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+                            alt="Página Web Proyecto 1" class="project-img">
+                    </div>
+                    <div class="project-data">
+                        <h3 class="project-title">Sitio Web "Ingeniería Eléctrica JMC"</h3>
+                        <p class="project-description">Landing Page responsiva con diseño moderno y navegación
+                            optimizada para dispositivos móviles.</p>
+                        <div class="project-techs">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ingenieriaelectricajmc.cl/" target="_blank" rel="noopener" class="project-link"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> Ver Sitio</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 2 -->
+                <article class="project-card">
+                    <div class="project-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80"
+                            alt="Página Web Proyecto 2" class="project-img">
+                    </div>
+                    <div class="project-data">
+                        <h3 class="project-title">Portafolio Web propio</h3>
+                        <p class="project-description">Página web orientada a la presentación de servicios, optimizada
+                            en rendimiento, estructura semántica y estilo visual.</p>
+                        <div class="project-techs">
+                            <span>HTML5</span>
+                            <span>CSS Flexbox/Grid</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" rel="noopener" class="project-link"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> Estás aquí</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 6. Contacto -->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contacto</h2>
+            <span class="section-subtitle">Mis canales directos de comunicación</span>
+
+            <div class="contact-container container">
+                <div class="contact-grid">
+                    <!-- Correo -->
+                    <div class="contact-card">
+                        <div class="contact-icon-wrapper">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <h3 class="contact-card-title">Correo Electrónico</h3>
+                        <p class="contact-card-data">matibustamante3001@gmail.com</p>
+                        <a href="mailto:matibustamante3001@gmail.com" class="btn btn-secondary btn-sm">Enviar correo</a>
+                    </div>
+
+                    <!-- Teléfono / WhatsApp -->
+                    <div class="contact-card">
+                        <div class="contact-icon-wrapper">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <h3 class="contact-card-title">Teléfono / WhatsApp</h3>
+                        <p class="contact-card-data">+56 9 5756 0941</p>
+                        <a href="https://wa.me/56957560941" target="_blank" rel="noopener"
+                            class="btn btn-secondary btn-sm">Escribir al WhatsApp</a>
+                    </div>
+
+                    <!-- Redes Sociales -->
+                    <div class="contact-card">
+                        <div class="contact-icon-wrapper">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <h3 class="contact-card-title">Redes Profesionales</h3>
+                        <p class="contact-card-data">Conéctate conmigo</p>
+                        <div class="contact-socials">
+                            <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener"
+                                class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://instagram.com/tu-usuario" target="_blank" rel="noopener"
+                                class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://facebook.com/tu-usuario" target="_blank" rel="noopener" class="social-link"
+                                aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container container">
+            <h2 class="footer-title">Matías Bustamante</h2>
+            <p class="footer-subtitle">Futuro Ingeniero en Informática</p>
+            <p class="footer-copy">&#169; 2026 Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Archivo de JavaScript -->
+    <script src="portafolio.js"></script>
+</body>
+
+</html>
